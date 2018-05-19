@@ -10,6 +10,21 @@ class HtmlMaker:
         self.destination_file_name = file
         self.base = self.make_it_shorter()
         self.liks_directory = self.make_courses_direcotry()
+        
+#
+#      ____________
+#     /-----------\
+#    |_____________|
+#   [-----[(O)]-[(o)]
+#    |          \ |
+#    |         o_\
+#    |    ________|
+#     \__________/
+#       |      |
+#--------\_____/---------
+#
+        
+        
 
     def copy_to_html(self):
         with open(self.destination_file_name, 'wb') as writer:
