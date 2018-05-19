@@ -2,8 +2,6 @@ from urllib.parse import urlparse
 import pycurl
 import certifi
 
-#klasa HtmlMaker
-#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker#klasa HtmlMaker
 class HtmlMaker:
     def __init__(self, address, file):
         self.site_url = address
