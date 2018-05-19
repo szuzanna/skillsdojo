@@ -37,4 +37,12 @@ class HtmlMaker:
                 linki[nazwa] = self.base + link
         return linki
 
-test_case = HtmlMaker('https://eu.udacity.com/courses/all', 'out.html')
+    def __str__(self):
+        return 'hyhy kursiki'
+
+
+test_case = HtmlMaker('https://www.pluralsight.com/browse/it-ops', 'out.html')
+test_case.copy_to_html()
+print(test_case.base)
+print(test_case.liks_directory)
+print(test_case)
