@@ -29,6 +29,10 @@ tr:nth-child(even){
     margin-bottom: 5px;
 }
 
+ul{
+    /* list-style-type: none; */
+}
+
 /****************************************/
 
 .subcontent-wrapper{
@@ -103,6 +107,22 @@ a.button{
 
 .topnav .icon {
     display: none;
+}
+
+/****************************************/
+
+.recommended>.subcontent>p{
+    padding-left:22px;
+    text-align: left;
+}
+
+.recommended-list{
+    text-align: left;
+}
+
+.recommended-list>li{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /****************************************/

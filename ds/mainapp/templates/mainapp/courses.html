@@ -21,26 +21,26 @@
         <!-- <a href="{% url 'admin:index' %}" class="active">Admin</a> -->
     </div>
 
-    <!--{% if user.is_authenticated %}
-        <h3>Hello, {{ user.username }}</h3>
-    {% else %}
-        <h3>Welcome, kind guest!</h3>
-    {% endif %}-->
-
-    <div class=subcontent-wrapper>
+    <div class="subcontent-wrapper recommended">
     <div class="subcontent">
-        <h2>What do you want to learn?</h2>
+        <h2>Resources recommended especially for you</h2>
+        <p>Check out what we have chosen for you:</p>
 
-        <div class="user-input">
-            <select>
-                {% for r in learn_options %}
-                <option value="{{ r }}">{{ r }}</option>
-                {% endfor %}
-            </select>
-
-            <a href="{% url 'questionnaire' %}" class="button">Discover your learning style</a>
-            <a href="{% url 'courses' %}" class="button">See how it works</a>
-        </div>
+        <ul class="recommended-list">
+            <li>This is a list item</li>
+            <li>Another list item</li>
+            <li>Yet another list item</li>
+            <li>Another list item</li>
+            <li>This is a list item</li>
+            <li>Another list item</li>
+            <li>Yet another list item</li>
+            <li>Another list item</li>
+            <li>This is a list item</li>  
+            <li>Another list item</li>
+            <li>Yet another list item</li>
+            <li>Another list item</li>
+            <li>This is a list item</li>
+        </ul>
     </div>
     </div>
 

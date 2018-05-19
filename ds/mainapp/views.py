@@ -12,3 +12,7 @@ def index(request):
 def questionnaire(request):
     context = {}
     return render(request, 'mainapp/questionnaire.html', context)
+
+def courses(request):
+    context = {}
+    return render(request, 'mainapp/courses.html', context)
