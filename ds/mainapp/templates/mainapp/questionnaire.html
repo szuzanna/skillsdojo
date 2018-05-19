@@ -1,0 +1,233 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'mainapp/base.css' %}">
+    <link rel="stylesheet" href="/static/global-base.css">
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <title>Welcome to Skillsdojo!</title>
+</head>
+
+<body>
+    <div class="site-content">
+
+    <div class="topnav">
+        {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}">Logout</a>
+        {% else %}
+        <a href="{% url 'login' %}">Login</a>
+        {% endif %}
+        <!-- <a href="{% url 'admin:index' %}" class="active">Admin</a> -->
+    </div>
+
+    {% if user.is_authenticated %}
+        <h3>Hello, {{ user.username }}</h3>
+    {% else %}
+        <h3>Welcome, kind guest!</h3>
+    {% endif %}
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+            <h3>WARK Questionnaire version 7.1</h3>
+
+            Choose the answer which best explains your preference and click the box next to it. Please click more than one if a single answer does not match your perception. Leave blank any question that does not apply.
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+        You are about to purchase a digital camera or mobile phone. Other than price, what would most influence your decision?
+        <ul>
+            <li>Reading the details or checking its features online.</li>
+            <li>It is a modern design and looks good.</li>
+            <li>The salesperson telling me about its features.</li>
+            <li>Trying or testing it.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+       You are planning a vacation for a group. You want some feedback from them about the plan. You would:
+        <ul>
+            <li>describe some of the highlights they will experience.</li>
+            <li>use a map to show them the places.</li>
+            <li>phone, text or email them.</li>
+            <li>give them a copy of the printed itinerary.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+       A group of tourists wants to learn about the parks or wildlife reserves in your area. You would:
+        <ul>
+            <li>show them maps and internet pictures.</li>
+            <li>give them a book or pamphlets about the parks or wildlife reserves.</li>
+            <li>take them to a park or wildlife reserve and walk with them.</li>
+            <li>talk about, or arrange a talk for them about parks or wildlife reserves.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+        You have to make an important speech at a conference or special occasion. You would:
+        <ul>
+            <li>make diagrams or get graphs to help explain things.</li>
+            <li>write out your speech and learn from reading it over several times.</li>
+            <li>gather many examples and stories to make the talk real and practical.</li>
+            <li>write a few key words and practice saying your speech over and over.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+        You are going to cook something as a special treat. You would:
+        <ul>
+            <li>look on the Internet or in some cookbooks for ideas from the pictures.</li>
+            <li>use a cookbook where you know there is a good recipe.</li>
+            <li>cook something you know without the need for instructions.</li>
+            <li>ask friends for suggestions.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+        Do you prefer a teacher or a presenter who uses:
+        <ul>
+            <li>handouts, books, or readings.</li>
+            <li>question and answer, talk, group discussion, or guest speakers.</li>
+            <li>demonstrations, models or practical sessions.</li>
+            <li>diagrams, charts or graphs.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+        You have finished a competition or test and would like some feedback. You would like to have feedback:
+        <ul>
+            <li>using examples from what you have done.</li>
+            <li>from somebody who talks it through with you.</li>
+            <li>using graphs showing what you had achieved.</li>
+            <li>using a written description of your results.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+            Remember a time when you learned how to do something new. Avoid choosing a physical skill, eg. riding a bike. You learned best by:
+        <ul>
+            <li>written instructions – e.g. a manual or book.</li>
+            <li>diagrams, maps, and charts - visual clues.</li>
+            <li>watching a demonstration.</li>
+            <li>listening to somebody explaining it and asking questions.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+        Other than price, what would most influence your decision to buy a new non-fiction book?
+        <ul>
+            <li>Quickly reading parts of it.</ul>
+            <li>A friend talks about it and recommends it.</ul>
+            <li>The way it looks is appealing.</ul>
+            <li>It has real-life stories, experiences and examples.</ul>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+        You have a problem with your heart. You would prefer that the doctor:
+        <ul>
+            <li>used a plastic model to show what was wrong.</li>
+            <li>showed you a diagram of what was wrong.</li>
+            <li>described what was wrong.</li>
+            <li>gave you something to read to explain what was wrong.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+       You are going to choose food at a restaurant or cafe. You would:
+        <ul>
+            <li>look at what others are eating or look at pictures of each dish.</li>
+            <li>listen to the waiter or ask friends to recommend choices.</li>
+            <li>choose from the descriptions in the menu.</li>
+            <li>choose something that you have had there before.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+            A website has a video showing how to make a special graph. There is a person speaking, some lists and words describing what to do and some diagrams. You would learn most from:
+        <ul>
+            <li>seeing the diagrams.</li>
+            <li>reading the words.</li>
+            <li>watching the actions.</li>
+            <li>listening.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+        I like websites that have:
+        <ul>
+            <li>interesting design and visual features.</li>
+            <li>audio channels where I can hear music, radio programs or interviews.</li>
+            <li>interesting written descriptions, lists and explanations.</li>
+            <li>things I can click on, shift or try.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+            You want to learn a new program, skill or game on a computer. You would:
+        <ul>
+            <li>talk with people who know about the program.</li>
+            <li>read the written instructions that came with the program.</li>
+            <li>use the controls or keyboard.</li>
+            <li>follow the diagrams in the book that came with it.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+            You are using a book, CD or website to learn how to take photos with your new digital camera. You would like to have:
+        <ul>
+            <li>a chance to ask questions and talk about the camera and its features.</li>
+            <li>many examples of good and poor photos and how to improve them.</li>
+            <li>diagrams showing the camera and what each part does.</li>
+            <li>clear written instructions with lists and bullet points about what to do.</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="subcontent-wrapper">
+    <div class="subcontent">
+        You are helping someone who wants to go to your airport, the center of town or railway station. You would:
+        <ul>
+            <li>go with her.</li>
+            <li>write down the directions.</li>
+            <li>draw, or show her a map, or give her a map.</li>
+            <li>tell her the directions.</li>
+        </ul>
+    </div>
+    </div>
+
+    </div>
+
+</body>
+</html>
