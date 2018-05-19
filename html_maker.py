@@ -10,3 +10,6 @@ with open('out.html', 'wb') as writer:
     c.setopt(c.CAINFO, certifi.where())
     c.perform()
     c.close()
+
+
+
